@@ -29,14 +29,23 @@ public class ModifyTest{
 		
 		Query<Test> query = session.createQuery(cr);
 		
-		Test test = query.getSingleResult();
+		List<Test> testAll = query.getResultList();
+		
+		System.out.println("Iveskite testo, kuri norite redaguoti, nr.:");
+		for (Test test: testAll) {
+			System.out.println("Klausimo nr: ["+test.getNr()+"] " + test.getName());
+		}
+		int modNr = sc.nextInt();
+		sc.nextLine();
+		
+		Test test = testAll.get(modNr-1);
 		
 		System.out.println("Iveskite klausimo, kuri norite redaguoti, nr.:");
 		List<Question> allQues = test.getQuestion();
 		for(Question ques : allQues) {
 			System.out.println("Klausimo nr: ["+ques.getNr()+"] " + ques.getQuestion());
 		}
-		int modNr = sc.nextInt();
+		modNr = sc.nextInt();
 		sc.nextLine();
 		System.out.println("Iveskite nauja klausima");
 		String modQues = sc.nextLine();

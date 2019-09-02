@@ -27,26 +27,35 @@ public class StudTesting {
 		
 		Query<Test> query = session.createQuery(cr);
 		
-		Test test = query.getSingleResult();
-
+		List<Test> testAll = query.getResultList();
+		
 		System.out.println("Iveskite varda");
 		String tempName = sc.nextLine();
 		System.out.println("Iveskite pavarde");
 		String tempSur = sc.nextLine();
 		Student student = new Student(tempName, tempSur);
+		
+		System.out.println("Iveskite testo, kuri norite laikyti, nr.:");
+		for (Test test: testAll) {
+			System.out.println("Klausimo nr: ["+test.getNr()+"] " + test.getName());
+		}
+		int modNr = sc.nextInt();
+		sc.nextLine();
+		
+		Test test = testAll.get(modNr-1);
 
 		HashMap <Integer,Integer> tempAllAns = new HashMap<Integer, Integer>();
 		int tempMarks = 0;
 		String tempResult;
 		
 		for (int i = 0; i< test.getQuestion().size(); i++) {
-			System.out.println(test.getQuestion().get(i).getNr() + " klausimas: " + test.getQuestion().get
+			System.out.println("["+test.getQuestion().get(i).getNr() + "] klausimas: " + test.getQuestion().get
 
 (i).getQuestion());
 			System.out.println("Galimi atsakymai: ");
 			for(int j = 0; j < test.getQuestion().get(i).getAnswer().size(); j++) {
-				System.out.println(test.getQuestion().get(i).getAnswer().get(j).getNr() 
-						+ " atsakymas: " + test.getQuestion().get(i).getAnswer().get
+				System.out.println("["+test.getQuestion().get(i).getAnswer().get(j).getNr() 
+						+ "] atsakymas: " + test.getQuestion().get(i).getAnswer().get
 
 (j).getVairiant());
 			}

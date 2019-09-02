@@ -38,6 +38,7 @@ public class Meniu {
 						System.out.println("Iveskite ka norite daryti: \n" + 
 								"[1] - ivesti testa \n" + 
 								"[2] - koreguoti esama testa \n" + 
+								"[3] - generuoti statistika \n" + 
 								"[x] - iseiti");
 							command1 = sc.next();
 							switch (command1) {
@@ -47,6 +48,9 @@ public class Meniu {
 							case "2": 
 									new ModifyTest().modifyTest();
 									break;
+							case "3":
+								    new Statistics();
+							break;
 							case "x":
 							break;
 							default:
