@@ -28,7 +28,7 @@ public class Macaw1 {
 	public static void main(String[] args) {
 
 		ArrayList<String> texts = new ArrayList<>(
-				List.of(" gg iie ooooo kkkk", "eeeeejhffh", "gg iie ooo", "fff ggggg"));
+				List.of("aaaa", "aaaa", "aaaa", "aa"));
 
 		System.out.println(
 				"Masyvo tekstas(-ai) su daugiausiai is eiles besikartuojanciu " + 
