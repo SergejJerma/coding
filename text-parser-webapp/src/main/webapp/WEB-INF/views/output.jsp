@@ -3,9 +3,9 @@
 <title>Text Output layout</title>
 </head>
 <body>
-<div>Output text</div>
+<div>Output result</div>
      
- 		<textarea rows="30" cols="50">${name}</textarea> 
+ 		<textarea rows="30" cols="50">${text}</textarea> 
      
 
 </body>

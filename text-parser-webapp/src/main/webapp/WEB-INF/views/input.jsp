@@ -5,7 +5,7 @@
 <body>
 	<div>Input text</div>
      <form action="/frb-mvc/input" method="POST">
- 		<textarea name="name" rows="10" cols="50"></textarea> 
+ 		<textarea name="text" rows="10" cols="50"></textarea> 
         <input type="submit" value="Submit"/>
     </form>
 </body>
