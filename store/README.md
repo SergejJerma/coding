@@ -46,4 +46,4 @@ Programa kontroliuoja įvedamų parametrų formatą: prekių likutis turi būti 
 
 Tinkamai įvedus paramentrus, konsolėje pateikiami pagal prekių pavadinimus surušiuoti sąrašai.
 
-Programa darbą baigią konsolėje įvedus [x].
+Programa darbą baigia konsolėje įvedus [x].
