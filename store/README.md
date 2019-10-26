@@ -4,6 +4,10 @@ Sukurta prekių sandėlio informacinė sistema, kuri leidžia sandėlio administ
 ●	Peržiūrėti trūkstamų prekių kiekius. 
 ●	Patikrinti prekes, kurių galiojimo laikas pasibaigęs arba pasibaigs greitu metu. 
 
+## Programos klasės
+
+* [Item.java](https://github.com/SergejJerma/coding/blob/master/store/src/main/java/com/serjer/Item.java) 
+* [Store.java](https://github.com/SergejJerma/coding/blob/master/store/src/main/java/com/serjer/Store.java) 
 
 ## Paleidimas
 
