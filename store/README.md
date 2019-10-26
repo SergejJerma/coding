@@ -25,7 +25,7 @@ C:\Users\User\Desktop\store\sample.csv
 ## Trumpai apie veikimą
 
 Paleista programa iš nuskaityto failo sudaro sandėlio prekių sąrašą, apjungiant dublikatus, jeigu prekės kodas, pavadinimas ir galiojimo data sutampa, atitinkamai sudeda kiekius. 
-Konsolėje pateikiams meniu administratoriui:
+Konsolėje pateikiamas meniu administratoriui:
 
 ```
 Iveskite pagal ka norite tikrinti sandeli:
